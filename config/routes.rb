@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get("/photos/:id", {:controller=>"photos", :action=>"show"})
+  get("/new_photo", {:controller=>"photos", :action=>"new"})
+  get("/create", {:controller=>"photos", :action=>"create"})
 end
