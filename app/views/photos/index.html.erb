@@ -1,0 +1,9 @@
+<h1>All Photos</h1>
+<ul>
+  <% @photos.each do |photo| %>
+  <li><%= photo.caption %> <img src="<%= photo.image_url %>" alt="<%= photo.caption %>">
+    <a class="btn btn-primary" href="/photos/<%= photo.id %>">show</a>
+    <a class="btn btn-primary" href="/remove_photo/<%=photo.id%>">remove</a>
+</li>
+  <% end %>
+</ul>

@@ -1,3 +1,5 @@
 <h1>photo# <%= @photo.id %></h1>
 <img src="<%= @photo.image_url %>" alt="<%= @photo.caption %>">
+<a class="btn btn-primary" href="/edit_photo/<%=@photo.id%>">edit</a>
 <p><%= @photo.caption %></p>
+<a class="btn btn-primary" href="/remove_photo/<%=@photo.id%>">remove</a>

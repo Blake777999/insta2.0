@@ -1,0 +1,8 @@
+<h1>Add your Photos here</h1>
+<form action="/update_photo/<%=@photo.id%>">
+  <label for="image_url">Enter your image url</label>
+  <input type="text" name="the_image_url" value="<%= @photo.image_url %>" id="image_url">
+  <label for="caption">Enter your caption</label>
+  <input type="text" name="the_caption" value="<%= @photo.caption %>" id="caption">
+  <input type="submit">
+</form>
