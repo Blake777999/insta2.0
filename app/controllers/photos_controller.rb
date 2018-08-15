@@ -10,7 +10,7 @@ class PhotosController < ApplicationController
     photo.image_url = params['image_url']
     photo.caption = params['caption']
     photo.save
-    redirect_to("/photos/#{photo.id}")
+    redirect_to("/photos/#{@photo.id}")
   end
   def edit
     @photo=Photo.find(params['id'])

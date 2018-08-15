@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get("/update_photo/:id", {:controller=>"photos", :action=>"update"})
   get("/", {:controller=>"photos", :action=>"index"})
   get("/remove_photo/:id", {:controller=>"photos", :action=>"destroy"})
+  get("/new_comments", {:controller=>"comments", :action=>"new"})
+  get("/create_comments", {:controller=>"comments", :action=>"create"})
 end
